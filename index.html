@@ -12,12 +12,16 @@
           <div class="logo">
             <img src="assets/images/upc.png" alt="Logo" />
           </div>
-          <h1 class="title">My Portfolio</h1>
+          <h1 class="title" id="title">My Portfolio</h1>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" id="nav-about">About</a></li>
+            <li><a href="#portfolio" id="nav-portfolio">Portfolio</a></li>
+            <li><a href="#contact" id="nav-contact">Contact</a></li>
           </ul>
+          <div class="language-switch">
+            <button id="btn-en">🇺🇸 EN</button>
+            <button id="btn-es">🇪🇸 ES</button>
+        </div>
         </nav>
     </header>
 
@@ -25,10 +29,10 @@
         <div class="about-content">
             <img src="assets/images/dev.png" alt="dev" class="about-image">
             <div class="about-text">
-                <h2>I'm <span>Diego Huincho</span></h2>
-                <h3>Front-End Developer</h3>
-                <p>I'm a Software Engineering student at Universidad Peruana de Ciencias Aplicadas (UPC), currently in my 7th semester.</p>
-                <a href="#contact" class="contact-button">Contact Me</a>
+                <h2 id="about-title">I'm <span>Diego Huincho</span></h2>
+                <h3 id="about-subtitle">Front-End Developer</h3>
+                <p id="about-text">I'm a Software Engineering student at Universidad Peruana de Ciencias Aplicadas (UPC), currently in my 7th semester.</p>
+                <a href="#contact" class="contact-button" id="about-contact-button">Contact Me</a>
             </div>
         </div>
     </section>
@@ -109,10 +113,11 @@
       </div>
     </section>
 
-    <section id="portfolio"></section>
-        <div class="portfolio-container" id="portfolioContainer">
-            <!-- Aquí se generarán dinámicamente los proyectos -->
-        </div>
+    <section id="portfolio">
+      <h2 id="portfolio-title">My Projects</h2>
+      <div class="portfolio-container" id="portfolioContainer">
+          <!-- Aquí se generarán dinámicamente los proyectos -->
+      </div>
     </section>
 
     <section id="contact">
